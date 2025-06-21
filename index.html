@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш IP</title>
+    <style>
+        body {
+            background-color: #111;
+            color: #00FF88;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.6);
+        }
+        .ip-box {
+            font-size: 1.5em;
+        }
+        .title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .info {
+            margin: 10px 0;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Информация о вашем IP</div>
+        <div class="ip-box">
+            <div class="info"><strong>Ваш IP:</strong> {{ ip }}</div>
+            <div class="info"><strong>Страна:</strong> {{ country }}</div>
+            <div class="info"><strong>Город:</strong> {{ city }}</div>
+        </div>
+        <div class="footer">Данные получены через <a href="https://ipapi.co/" target="_blank" style="color: #00FF88;">ipapi.co</a></div>
+    </div>
+</body>
+</html>
